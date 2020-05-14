@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: nux-api
+  namespace: marianne-playground
+  annotations:
+    kubernetes.io/ingress.class: addon-http-application-routing
+    nginx.ingress.kubernetes.io/cors-allow-methods: "GET, PUT, POST, DELETE, PATCH, OPTIONS"
+spec:
+  rules:
+    - host: nux-api.e74c370edf4345d39982.westeurope.aksapp.io
+      http:
+        paths:
+          - backend:
+              serviceName: nux-api
+              servicePort: 6060
+            path: /

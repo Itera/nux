@@ -1,0 +1,73 @@
+@import './variables.scss';
+
+.search-form {
+    margin: 1.5rem 0 2rem;
+    width: 100%;
+    label {
+        width: 100%;
+    }
+    input[type='text']  {
+        width: 100%;
+        padding: 16px;
+        font-size: $pFontSize;
+        line-height: 1em;
+        margin-top: 0.5rem;
+    }
+    .search-btn {
+        width: 100%;
+        background-color: transparent;
+        font-size: $labelFontSize;
+        padding: 15px 0;
+        line-height: 1rem;
+        border-radius: 3px;
+        border: 1px solid lightgray;
+    }
+    .search-btn:hover {
+        background-color: #D9D9D9;
+        color: #424041
+    }
+}
+
+.conference-checkbox-wrapper {
+    display: flex;
+    .conference-checkbox {
+        margin-right: 1vw;
+    }
+    .conference-checkbox-label {
+        font-size: $pFontSize;
+    }
+}
+
+.conference-item {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 0px 5px lightgray;
+    text-align: start;
+    padding: 20px 20px;
+    margin-bottom: 2vh;
+
+    .conference-head {
+        .conference-location, .conference-month-year {
+            margin-bottom: 0.5rem;
+        }
+        .conference-days {
+            margin-bottom: 0;
+        }
+        .conference-icon {
+            margin-right: 1vw;
+        }
+        .chevron-icon {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+    }
+
+    .conference-description {
+        margin: 1rem 0 0 0;
+    }
+    .conference-link {
+        float: right;
+    }
+}

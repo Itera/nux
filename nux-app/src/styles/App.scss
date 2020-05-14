@@ -1,0 +1,44 @@
+@import './variables.scss';
+
+body {
+  font-family: 'ApexNew';
+  font-variant-numeric: lining-nums;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: $hFontSize;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: $labelFontSize;
+}
+
+label {
+  font-family: 'ApexNew';
+  font-weight: 500;
+  text-align: start;
+  font-size: $labelFontSize;
+  line-height: 1em;
+}
+
+p {
+  font-family: 'ApexNew';
+  font-size: $pFontSize;
+}
+
+.navbar {
+  .navbar-brand {
+    img {
+      height: auto;
+      width: 5rem;
+      margin-left: 2rem;
+    }
+  }
+  .navbar-collapse{
+    .mr-auto.navbar-nav {
+      margin-left: 2rem;
+    }
+  }
+}

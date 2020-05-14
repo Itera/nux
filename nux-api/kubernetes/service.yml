@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nux-api
+  namespace: marianne-playground
+  labels:
+    application: nux-api
+spec:
+  selector:
+    application: nux-api
+  ports:
+    - protocol: TCP
+      port: 6060
+      targetPort: 60
