@@ -20,7 +20,8 @@ const emptyConference: Conference = {
     Country: "",
     StartDate: "",
     EndDate: "", 
-    URL: ""
+    URL: "",
+    Online: false
 } 
 
 function areFieldsEmpty (c: Conference) : boolean { //todo
@@ -34,6 +35,12 @@ const ConferenceForm = ({conference = emptyConference, onClose}: Props) => {
     const onChange = (e: React.ChangeEvent<HTMLSelectElement>, label: string) => { 
         const newValue = e.target.value;
         let updated = {...editedC, [label]: newValue};
+        setEditedC(updated)
+    }
+
+    const onChangeCheckbox = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const newCheckValue = e.target.checked;
+        let updated = {...editedC, Online: newCheckValue}
         setEditedC(updated)
     }
 
@@ -67,7 +74,15 @@ const ConferenceForm = ({conference = emptyConference, onClose}: Props) => {
                         <Form.Control type="date" as="input" id="enddate" placeholder="StartDate" value={dateValue(editedC.EndDate)} onChange={(e: React.ChangeEvent<HTMLSelectElement>) => onChange(e, "EndDate")}/>
                     </span>
                 </span>
-                <Form.Control type="text" as="input"  placeholder="URL" value= {editedC.URL} onChange={(e: React.ChangeEvent<HTMLSelectElement>) => onChange(e, "URL")}/>
+                <span className="date-form">
+                    <span className="date-form-item">
+                        <Form.Control type="text" as="input" placeholder="URL" value={editedC.URL} onChange={(e: React.ChangeEvent<HTMLSelectElement>) => onChange(e, "URL")}/>
+                    </span>
+                    <span className="date-form-item">
+                        <label htmlFor="online">Online: </label>
+                        <Form.Check type="checkbox" id="online" onChange={(e: React.ChangeEvent<HTMLInputElement>) => onChangeCheckbox(e)} />
+                    </span>
+                </span>
             </Form.Group>
             <Button variant="outline-primary" type="submit" onClick={(e: React.MouseEvent<HTMLElement> ) => onSave(e)} title="Lagre" disabled={areFieldsEmpty(editedC)}> 
                 <FontAwesomeIcon icon={faSave} />

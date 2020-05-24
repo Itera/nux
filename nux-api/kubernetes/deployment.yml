@@ -1,9 +1,8 @@
-  
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nux-api
-  namespace: marianne-playground
+  namespace: nux
   labels:
     application: nux-api
 spec:

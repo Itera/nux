@@ -1,7 +1,7 @@
 import React from 'react';
 import Page, {Pages} from '../interfaces/page';
 import {Navbar, Nav} from 'react-bootstrap';
-import iteraLogo from '../assets/img/iteralogo2.png';
+import iteraLogo from '../assets/img/logo-new.png';
 import '../styles/menu.scss';
 
 const NavbarMenu = () => {

@@ -11,7 +11,6 @@ const onSuccess = (cs: Conference[]) => {
 
 const ConferenceWrapper = () => {
     const [conferences, setConferences] = useState<Service<Conference[]>>({status: ConnectionStatus.LOADING})
-    
     useEffect(() => {
         getConferences().then((c) => setConferences(c))
     },[])

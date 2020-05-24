@@ -3,7 +3,7 @@ delete from Conferences;
 -- Insert rows into table 'TableName' in schema '[dbo]'
 INSERT INTO [dbo].[Conferences]
 ( -- Columns to insert data into
- [Name], [Description], [City], [Country], [StartDate], [EndDate], [URL]
+ [Name], [Description], [City], [Country], [StartDate], [EndDate], [URL], [Online]
 )
 VALUES
 ( -- First row: values for the columns in the list above
@@ -13,7 +13,8 @@ VALUES
     'Norge',
     '2020-04-20',
     '2020-04-21',
-    'https://yggdrasilkonferansen.no/'
+    'https://yggdrasilkonferansen.no/',
+    '0'
 ),
 ( -- Second row: values for the columns in the list above
     'Digital Thinkers',
@@ -22,7 +23,8 @@ VALUES
     'Japan',
     '2020-01-23',
     '2020-01-24',
-    'https://conference.awwwards.com/tokyo/'
+    'https://conference.awwwards.com/tokyo/',
+    '0'
 ),
 (
     'Interaction 20 (IxDA)',
@@ -31,7 +33,8 @@ VALUES
     'Italia',
     '2020-02-02',
     '2020-02-07',
-    'https://interaction20.ixda.org/'
+    'https://interaction20.ixda.org/',
+    '0'
 ),
 (
     'Interaction Design Education Summit',
@@ -40,7 +43,8 @@ VALUES
     'Italia',
     '2020-02-02',
     '2020-02-03',
-    'https://edusummit.ixda.org/'
+    'https://edusummit.ixda.org/',
+    '0'
 ),
 (
     'Outcome 2020: UX for Narrative Design',
@@ -49,7 +53,8 @@ VALUES
     'India',
     '2020-02-08',
     '2020-02-08',
-    'http://outcomeconf.com/'
+    'http://outcomeconf.com/',
+    '0'
 ),
 (
     'Experience Design',
@@ -58,7 +63,8 @@ VALUES
     'USA',
     '2020-02-24',
     '2020-02-26',
-    'https://experiencedesignweek.iqpc.com/'
+    'https://experiencedesignweek.iqpc.com/',
+    '0'
 ),
 (
     'Pause festival',
@@ -67,7 +73,8 @@ VALUES
     'Australia',
     '2020-02-05',
     '2020-02-07',
-    'https://www.pausefest.com.au/'
+    'https://www.pausefest.com.au/',
+    '0'
 ),
 (
     'FITC Amsterdam',
@@ -76,7 +83,8 @@ VALUES
     'Nederland',
     '2020-02-24',
     '2020-02-25',
-    'https://fitc.ca/event/am20/'
+    'https://fitc.ca/event/am20/',
+    '0'
 ),
 (
     'Digital Thinkers',
@@ -85,7 +93,8 @@ VALUES
     'Nederland',
     '2020-02-19',
     '2020-02-21',
-    'https://conference.awwwards.com/amsterdam '
+    'https://conference.awwwards.com/amsterdam ',
+    '0'
 ),
 (
     'In/Visible Talks',
@@ -94,7 +103,8 @@ VALUES
     'USA',
     '2020-01-20',
     '2020-01-20',
-    'https://invisibletalks.com/conference-2020/'
+    'https://invisibletalks.com/conference-2020/',
+    '0'
 ),
 (
     'DesignTO',
@@ -103,7 +113,8 @@ VALUES
     'Canada',
     '2020-01-17',
     '2020-01-26',
-    'https://designto.org/'
+    'https://designto.org/',
+    '0'
 ),
 (
     'UX Camp DC',
@@ -112,7 +123,8 @@ VALUES
     'USA',
     '2020-01-18',
     '2020-01-18',
-    'http://uxcampdc.com/index.html'
+    'http://uxcampdc.com/index.html',
+    '0'
 ),
 (
     'YOU GOT THIS',
@@ -121,7 +133,8 @@ VALUES
     'Storbritania',
     '2020-01-18',
     '2020-01-18',
-    'https://2020.yougotthis.io/'
+    'https://2020.yougotthis.io/',
+    '0'
 ), 
 (
     'New Adventures',
@@ -130,7 +143,8 @@ VALUES
     'Storbritania',
     '2020-01-22',
     '2020-01-23',
-    'https://newadventuresconf.com/2020/'
+    'https://newadventuresconf.com/2020/',
+    '0'
 ), 
 (
     'Nielsen Norman Group UX Conference',
@@ -139,7 +153,8 @@ VALUES
     'USA',
     '2020-01-27',
     '2020-01-31',
-    'https://www.nngroup.com/training/austin/'
+    'https://www.nngroup.com/training/austin/',
+    '0'
 ), 
 (
     'Wearable Technologies',
@@ -148,7 +163,8 @@ VALUES
     'Tyskland',
     '2020-01-27',
     '2020-01-28',
-    'https://www.wearable-technologies.eu/'
+    'https://www.wearable-technologies.eu/',
+    '0'
 ), 
 (
     'ConveyUX',
@@ -157,7 +173,8 @@ VALUES
     'USA',
     '2020-03-03',
     '2020-03-05',
-    'https://conveyux.com/'
+    'https://conveyux.com/',
+    '0'
 ), 
 (
     'SXSW',
@@ -166,7 +183,8 @@ VALUES
     'USA',
     '2020-03-12',
     '2020-03-22',
-    'https://schedule.sxsw.com/2020/events/track/Design'
+    'https://schedule.sxsw.com/2020/events/track/Design',
+    '0'
 ), 
 (
     'UX Copenhagen',
@@ -175,7 +193,8 @@ VALUES
     'Danmark',
     '2020-03-30',
     '2020-03-31',
-    'https://uxcopenhagen.com/'
+    'https://uxcopenhagen.com/',
+    '0'
 ), 
 (
     'The UX Conference',
@@ -184,7 +203,8 @@ VALUES
     'Storbritania',
     '2020-03-02',
     '2020-03-03',
-    'https://theuxconf.com/'
+    'https://theuxconf.com/',
+    '0'
 ), 
 (
     'Leading Design',
@@ -193,7 +213,8 @@ VALUES
     'USA',
     '2020-03-04',
     '2020-03-06',
-    'https://leadingdesign.com/conferences/sanfran-2020'
+    'https://leadingdesign.com/conferences/sanfran-2020',
+    '0'
 ), 
 (
     'Human-Robot Interaction',
@@ -202,7 +223,8 @@ VALUES
     'Storbritania',
     '2020-03-23',
     '2020-03-26',
-    'http://humanrobotinteraction.org/2020/'
+    'http://humanrobotinteraction.org/2020/',
+    '0'
 ), 
 (
     'IAC : Information Architecture',
@@ -211,7 +233,8 @@ VALUES
     'USA',
     '2020-04-16',
     '2020-04-18',
-    'https://www.theiaconference.com/'
+    'https://www.theiaconference.com/',
+    '0'
 ), 
 (
     'Beyond Design: Moving from Practice to Transformation',
@@ -220,7 +243,8 @@ VALUES
     'USA',
     '2020-09-08',
     '2020-09-11',
-    'https://designthinkingusa.iqpc.com/'
+    'https://designthinkingusa.iqpc.com/',
+    '0'
 ), 
 (
     'ACM CHI Conference',
@@ -229,7 +253,8 @@ VALUES
     'USA',
     '2020-04-25',
     '2020-04-30',
-    'https://chi2020.acm.org/'
+    'https://chi2020.acm.org/',
+    '0'
 ), 
 (
     'UX Insight',
@@ -238,7 +263,8 @@ VALUES
     'Nederland',
     '2020-09-14',
     '2020-09-16',
-    'https://event.uxinsight.org/'
+    'https://event.uxinsight.org/',
+    '0'
 ), 
 (
     'WebCon',
@@ -247,7 +273,8 @@ VALUES
     'USA',
     '2020-04-08',
     '2020-04-10',
-    'https://webcon.illinois.edu/'
+    'https://webcon.illinois.edu/',
+    '0'
 ), 
 (
     'An Event Apart',
@@ -256,7 +283,8 @@ VALUES
     'USA',
     '2020-04-13',
     '2020-04-15',
-    'https://aneventapart.com/'
+    'https://aneventapart.com/',
+    '0'
 ), 
 (
     'Health Experience Design',
@@ -265,7 +293,8 @@ VALUES
     'USA',
     '2020-04-14',
     '2020-04-15',
-    'https://healthexperiencedesign.com/'
+    'https://healthexperiencedesign.com/',
+    '0'
 ), 
 (
     'Beyond Tellerrand',
@@ -274,7 +303,8 @@ VALUES
     'Tyskland',
     '2020-04-27',
     '2020-04-29',
-    'https://beyondtellerrand.com/'
+    'https://beyondtellerrand.com/',
+    '0'
 ), 
 (
     'From Business to Buttons',
@@ -283,7 +313,8 @@ VALUES
     'Sverige',
     '2020-05-06',
     '2020-05-08',
-    'https://frombusinesstobuttons.com/'
+    'https://frombusinesstobuttons.com/',
+    '0'
 ), 
 (
     'ACE! 2020',
@@ -292,7 +323,8 @@ VALUES
     'Polen',
     '2020-09-16',
     '2020-09-18',
-    'https://aceconf.com/home'
+    'https://aceconf.com/home',
+    '0'
 ), 
 (
     'UX London',
@@ -301,7 +333,8 @@ VALUES
     'Storbritania',
     '2020-05-27',
     '2020-05-29',
-    'https://2020.uxlondon.com/'
+    'https://2020.uxlondon.com/',
+    '0'
 ), 
 (
     'UX Burlington: 20/20 Hindsight',
@@ -310,7 +343,8 @@ VALUES
     'USA',
     '2020-05-01',
     '2020-05-01',
-    'https://www.uxburlington.com/'
+    'https://www.uxburlington.com/',
+    '0'
 ), 
 (
     'Pixel Up!',
@@ -319,7 +353,8 @@ VALUES
     'Sør-Afrika',
     '2020-09-14',
     '2020-09-16',
-    'https://pixelup.co.za/'
+    'https://pixelup.co.za/',
+    '0'
 ), 
 (
     'How Design Live',
@@ -328,7 +363,8 @@ VALUES
     'USA',
     '2020-10-26',
     '2020-10-29',
-    'https://www.howdesignlive.com/'
+    'https://www.howdesignlive.com/',
+    '0'
 ),
 (
     '#gamesUR Summit North America',
@@ -337,7 +373,8 @@ VALUES
     'Canada',
     '2020-05-14',
     '2020-05-14',
-    'https://gamesurconf.com/'
+    'https://gamesurconf.com/',
+    '0'
 ),
 (
     'UX-LX',
@@ -346,7 +383,8 @@ VALUES
     'Portugal',
     '2020-05-19',
     '2020-05-22',
-    'https://www.ux-lx.com/'
+    'https://www.ux-lx.com/',
+    '0'
 ),
 (
     'UXR',
@@ -355,7 +393,8 @@ VALUES
     'Canada',
     '2020-06-25',
     '2020-06-26',
-    'https://uxrconference.com/'
+    'https://uxrconference.com/',
+    '0'
 ),
 (
     'Future of Branding Week',
@@ -364,7 +403,8 @@ VALUES
     'Storbritania',
     '2020-06-22',
     '2020-06-26',
-    'https://futurelondonacademy.co.uk/en/course/branding'
+    'https://futurelondonacademy.co.uk/en/course/branding',
+    '0'
 ),
 (
     'Mind the Product Engage Hamburg',
@@ -373,7 +413,8 @@ VALUES
     'Tyskland',
     '2020-06-24',
     '2020-06-26',
-    'https://www.mindtheproduct.com/mtpengage/hamburg/'
+    'https://www.mindtheproduct.com/mtpengage/hamburg/',
+    '0'
 ),
 (
     'UXstrat',
@@ -382,7 +423,8 @@ VALUES
     'Nederland',
     '2020-06-29',
     '2020-07-1',
-    'https://uxstrat.com/'
+    'https://uxstrat.com/',
+    '0'
 ),
 (
     'Fintech design summit',
@@ -391,7 +433,8 @@ VALUES
     'USA',
     '2020-06-25',
     '2020-06-25',
-    'https://fintechdesignsummit.com/new-york/'
+    'https://fintechdesignsummit.com/new-york/',
+    '0'
 ),
 (
     'Digital Thinkers',
@@ -400,7 +443,8 @@ VALUES
     'Canada',
     '2020-07-14',
     '2020-07-16',
-    'https://conference.awwwards.com/toronto'
+    'https://conference.awwwards.com/toronto',
+    '0'
 ),
 (
     'HCI (Human-Computer interaction) International',
@@ -409,7 +453,8 @@ VALUES
     'Danmark',
     '2020-07-19',
     '2020-07-24',
-    'http://2020.hci.international/'
+    'http://2020.hci.international/',
+    '0'
 ),
 (
     'ACM UMAP',
@@ -418,7 +463,8 @@ VALUES
     'Italia',
     '2020-07-14',
     '2020-07-17',
-    'https://um.org/umap2020/'
+    'https://um.org/umap2020/',
+    '0'
 ),
 (
     'Y',
@@ -427,7 +473,8 @@ VALUES
     'Norge',
     '2020-08-26',
     '2020-08-28',
-    'https://www.y-oslo.com/'
+    'https://www.y-oslo.com/',
+    '0'
 ),
 (
     'Design Matters',
@@ -436,7 +483,8 @@ VALUES
     'Danmark',
     '2020-09-23',
     '2020-09-24',
-    'https://designmatters.io/'
+    'https://designmatters.io/',
+    '0'
 ),
 (
     'Joint Futures',
@@ -445,7 +493,8 @@ VALUES
     'Finland',
     '2019-09-03',
     '2019-09-05',
-    'https://jointfuturesconf.com/index.html'
+    'https://jointfuturesconf.com/index.html',
+    '0'
 ),
 (
     'World Usability',
@@ -454,7 +503,8 @@ VALUES
     'Østerike',
     '2020-10-21',
     '2020-10-22',
-    'https://worldusabilitycongress.com/'
+    'https://worldusabilitycongress.com/',
+    '0'
 ),
 (
     'Amuse',
@@ -463,7 +513,8 @@ VALUES
     'Ungarn',
     '2019-10-16',
     '2019-10-18',
-    'https://amuseconf.com/'
+    'https://amuseconf.com/',
+    '0'
 ),
 (
     'Service design fringe festival',
@@ -472,7 +523,8 @@ VALUES
     'Storbritania',
     '2020-10-24',
     '2020-10-25',
-    'http://www.sd-ldf.com/'
+    'http://www.sd-ldf.com/',
+    '0'
 ),
 (
     'Design Leadership Summit ',
@@ -481,7 +533,8 @@ VALUES
     'Canada',
     '2020-05-07',
     '2020-05-08',
-    'https://designleadership.io'
+    'https://designleadership.io',
+    '0'
 ),
 (
     'Websummit',
@@ -490,7 +543,8 @@ VALUES
     'Portugal',
     '2020-11-02',
     '2020-11-05',
-    'https://websummit.com/'
+    'https://websummit.com/',
+    '0'
 ),
 (
     'Sustainable UX',
@@ -499,7 +553,8 @@ VALUES
     'Norge',
     '2019-02-12',
     '2019-02-12',
-    'https://sustainableux.com/'
+    'https://sustainableux.com/',
+    '0'
 ),
 (
     'FutureBank 2020',
@@ -508,7 +563,8 @@ VALUES
     'Norge',
     '2020-02-13',
     '2020-02-13',
-    'https://www.finansnorge.no/aktuelt/arrangementssider/2020/futurebank-2020/'
+    'https://www.finansnorge.no/aktuelt/arrangementssider/2020/futurebank-2020/',
+    '0'
 ),
 (
     'React Europe',
@@ -517,7 +573,8 @@ VALUES
     'Frankrike',
     '2020-05-14',
     '2020-05-15',
-    'https://www.react-europe.org/'
+    'https://www.react-europe.org/',
+    '0'
 ),
 (
     'JavaZone',
@@ -526,7 +583,8 @@ VALUES
     'Norge',
     '2020-09-09',
     '2020-09-10',
-    'https://2020.javazone.no/'
+    'https://2020.javazone.no/',
+    '0'
 ),
 (
     'React Norway',
@@ -535,7 +593,8 @@ VALUES
     'Norge',
     '2020-06-18',
     '2020-06-18',
-    'https://reactnorway.com/'
+    'https://reactnorway.com/',
+    '0'
 ),
 (
     'Funkas Tilgjengelighetsdager',
@@ -544,7 +603,8 @@ VALUES
     'Sverige',
     '2020-09-02',
     '2020-09-03',
-    'https://www.funka.com/no/vi-tilbyr/funkas-tilgjengelighetsdager/'
+    'https://www.funka.com/no/vi-tilbyr/funkas-tilgjengelighetsdager/',
+    '0'
 ),
 (
     'Vue.js Amsterdam',
@@ -553,7 +613,8 @@ VALUES
     'Nederland',
     '2020-02-20',
     '2020-02-21',
-    'https://vuejs.amsterdam/'
+    'https://vuejs.amsterdam/',
+    '0'
 ),
 (
     'Frontend Developer Love',
@@ -562,7 +623,8 @@ VALUES
     'Nederland',
     '2020-02-19',
     '2020-02-21',
-    'https://www.frontenddeveloperlove.com/'
+    'https://www.frontenddeveloperlove.com/',
+    '0'
 ),
 (
     'Web Rebels',
@@ -571,7 +633,8 @@ VALUES
     'Norge',
     '2020-05-14',
     '2020-05-15',
-    'https://www.webrebels.org/'
+    'https://www.webrebels.org/',
+    '0'
 ),
 (
     'ngVikings 2020',
@@ -580,7 +643,8 @@ VALUES
     'Norge',
     '2020-05-25',
     '2020-05-26',
-    'https://ngvikings.org/'
+    'https://ngvikings.org/',
+    '0'
 ),
 (
     'React Summit',
@@ -589,7 +653,8 @@ VALUES
     'Nederland',
     '2020-09-11',
     '2020-09-11',
-    'https://reactsummit.com/'
+    'https://reactsummit.com/',
+    '0'
 ),
 (
     'Merkevaredagene',
@@ -598,7 +663,8 @@ VALUES
     'Norge',
     '2020-03-05',
     '2020-03-05',
-    'https://kampanje.com/events/alle-arrangement/merkevaredagen-2020/'
+    'https://kampanje.com/events/alle-arrangement/merkevaredagen-2020/',
+    '0'
 )
 ,
 (
@@ -608,7 +674,8 @@ VALUES
     'Norge',
     '2020-04-16',
     '2020-04-17',
-    'https://app.tame.events/nextmnorway'
+    'https://app.tame.events/nextmnorway',
+    '0'
 )
 -- Add more rows here
 GO

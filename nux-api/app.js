@@ -8,9 +8,8 @@ var allowedOrigins = [
     'http://localhost:3000', //local
     'http://localhost:7070', //nux-admin docker
     'http://localhost:8080', //nux-app docker
-    'http://nux.e74c370edf4345d39982.westeurope.aksapp.io', //nux-app 
-    'http://nux-admin.e74c370edf4345d39982.westeurope.aksapp.io', // nux-admin
-    'https://nux.mad.itera.no/' // mad itera
+    'https://nux.mad.itera.no', //nux-app 
+    'https://nux-admin.mad.itera.no', // nux-admin
 ];
 
 app.use(cors({

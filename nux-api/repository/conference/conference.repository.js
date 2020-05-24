@@ -37,7 +37,7 @@ function fullParamterBuilder(l, m, y) {
 //     return parameters;
 // }
 
-function BuzzwordRepository(dbContext) {
+function ConferenceRepository(dbContext) {
 
     function getConferences(req, res) {
         var query = "select * from [dbo].[Conferences] order by StartDate asc"
@@ -55,7 +55,8 @@ function BuzzwordRepository(dbContext) {
         parameters.push({ name: 'URL', type: TYPES.VarChar, val: req.body.URL });
         parameters.push({ name: 'StartDate', type: TYPES.VarChar, val: req.body.StartDate });
         parameters.push({ name: 'EndDate', type: TYPES.VarChar, val: req.body.EndDate });
-        var query = "insert into [dbo].[Conferences] (Name, Description, City, Country, StartDate, EndDate, URL) values (@Name, @Description, @City, @Country, @StartDate, @EndDate, @URL)"
+        parameters.push({ name: 'Online', type: TYPES.Bit, val: req.body.Online });
+        var query = "insert into [dbo].[Conferences] (Name, Description, City, Country, StartDate, EndDate, URL, Online) values (@Name, @Description, @City, @Country, @StartDate, @EndDate, @URL, @Online)"
         dbContext.post(query, parameters, function (error, data) {
             return res.json(response(data, error));
         })
@@ -71,7 +72,8 @@ function BuzzwordRepository(dbContext) {
         parameters.push({ name: 'URL', type: TYPES.VarChar, val: req.body.URL });
         parameters.push({ name: 'StartDate', type: TYPES.VarChar, val: req.body.StartDate });
         parameters.push({ name: 'EndDate', type: TYPES.VarChar, val: req.body.EndDate });
-        var query = "update [dbo].[Conferences] set Name = @Name, Description = @Description, City = @City, Country = @Country, URL = @URL, StartDate = @StartDate, EndDate = @EndDate where Id = @Id"
+        parameters.push({ name: 'Online', type: TYPES.VarChar, val: req.body.Online });
+        var query = "update [dbo].[Conferences] set Name = @Name, Description = @Description, City = @City, Country = @Country, URL = @URL, StartDate = @StartDate, EndDate = @EndDate, Online=@Online where Id = @Id"
         dbContext.getQuery(query, parameters, false, function(error, data, rowCount) {
             if (rowCount > 0) {
                 return res.json({
@@ -132,4 +134,4 @@ function BuzzwordRepository(dbContext) {
         }
     }
     
-    module.exports = BuzzwordRepository;
+    module.exports = ConferenceRepository;

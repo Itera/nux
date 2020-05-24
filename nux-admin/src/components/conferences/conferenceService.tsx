@@ -10,7 +10,8 @@ const conferenceBody = (c: Conference) => {
         Country: c.Country,
         StartDate: c.StartDate,
         EndDate: c.EndDate,
-        URL: c.URL
+        URL: c.URL,
+        Online: c.Online
     }
 }
 

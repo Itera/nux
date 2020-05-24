@@ -13,7 +13,8 @@ CREATE TABLE [dbo].[Conferences]
     [Country] NVARCHAR(50) NOT NULL,
     [StartDate] DATETIME NOT NULL,
     [EndDate] DATETIME NOT NULL,
-    [URL] NVARCHAR(200)
+    [URL] NVARCHAR(200),
+    [Online] BIT NOT NULL,
 );
 GO
 /* Opprette unik indeks for fulltekstsøk */

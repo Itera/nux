@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Conference from '../../interfaces/conference';
-import {faPencilAlt, faTrashAlt, faAlignJustify, faMapPin, faCalendarAlt, faGlobeEurope} from '@fortawesome/free-solid-svg-icons';
+import {faPencilAlt, faTrashAlt, faAlignJustify, faMapPin, faCalendarAlt, faGlobeEurope, faWifi} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import ConferenceForm from './conferenceForm';
 import {months} from '../../utility/dateHelpers';
@@ -38,7 +38,7 @@ const formatConfDates = (start: string, end: string) => {
 const ConferenceItem = (props: Props) => {
     const [editMode, setEditMode] = useState(false);
     const {conference} = props;
-
+    
     const editAndDeleteBtns = () => {
         return !editMode && (
             <div className="data-btns">
@@ -60,6 +60,7 @@ const ConferenceItem = (props: Props) => {
                 <p> <FontAwesomeIcon className="data-icon" icon={faMapPin} /> {conference.City}, {conference.Country} </p>
                 <p> <FontAwesomeIcon className="data-icon" icon={faCalendarAlt} /> {formatConfDates(conference.StartDate, conference.EndDate)} </p>
                 <p> <FontAwesomeIcon className="data-icon" icon={faGlobeEurope} /> <a href={conference.URL} target="_blank" rel="noopener noreferrer">{conference.URL}</a> </p>
+                <p> <FontAwesomeIcon className="data-icon" icon={faWifi} /> {conference.Online ? "Online" : "Ikke online"} </p>
             </>
         )
     }
