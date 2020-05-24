@@ -1,14 +1,31 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nux
-  namespace: marianne-playground
+  name: nux-app
+  namespace: nux
   labels:
-    application: nux
+    application: nux-app
 spec:
   selector:
-    application: nux
+    application: nux-app
   ports:
     - protocol: TCP
       port: 8080
       targetPort: 80
+
+
+
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: nux
+#   namespace: marianne-playground
+#   labels:
+#     application: nux
+# spec:
+#   selector:
+#     application: nux
+#   ports:
+#     - protocol: TCP
+#       port: 8080
+#       targetPort: 80

@@ -3,7 +3,7 @@ import {Collapse} from 'react-bootstrap';
 import Conference from '../../../interfaces/conference';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {months, days} from '../../../utility/datetime';
-import {faChevronUp, faChevronDown, faMapMarkerAlt, faCalendarAlt, faClock} from '@fortawesome/free-solid-svg-icons';
+import {faChevronUp, faChevronDown, faMapMarkerAlt, faCalendarAlt, faClock, faWifi} from '@fortawesome/free-solid-svg-icons';
 
 interface Props {
     conference: Conference
@@ -40,6 +40,7 @@ const ConferenceItem = (props: Props) => {
                 <p className="conference-location"><FontAwesomeIcon icon={faMapMarkerAlt} className="conference-icon"/> {conference.City}, {conference.Country} </p>
                 <p className="conference-month-year"><FontAwesomeIcon icon={faCalendarAlt} className="conference-icon"/> {formatMonthYear(conference.StartDate)} </p>
                 <p className="conference-days"><FontAwesomeIcon icon={faClock} className="conference-icon"/> {formatDays(conference.StartDate, conference.EndDate)} </p>
+                <p className="conference-online"><FontAwesomeIcon icon={faWifi} className="conference-icon"/> {conference.Online ? 'Online' : 'Ikke Online'} </p>
                 <p className="chevron-icon"> <FontAwesomeIcon icon={open ? faChevronUp : faChevronDown} /></p>
             </span>
             <Collapse in={open}>

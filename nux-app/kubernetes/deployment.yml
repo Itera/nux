@@ -1,23 +1,46 @@
-  
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nux
-  namespace: marianne-playground
+  name: nux-app
+  namespace: nux
   labels:
-    application: nux
+    application: nux-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      application: nux
+      application: nux-app
   template:
     metadata:
       labels:
-        application: nux
+        application: nux-app
     spec:
       containers:
-        - name: nux
-          image: itetechmadacr.azurecr.io/nux:latest
+        - name: nux-app
+          image: itetechmadacr.azurecr.io/nux-app:latest
           ports:
             - containerPort: 80
+
+
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: nux
+#   namespace: marianne-playground
+#   labels:
+#     application: nux
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       application: nux
+#   template:
+#     metadata:
+#       labels:
+#         application: nux
+#     spec:
+#       containers:
+#         - name: nux
+#           image: itetechmadacr.azurecr.io/nux:latest
+#           ports:
+#             - containerPort: 80

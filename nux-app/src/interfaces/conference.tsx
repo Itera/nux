@@ -6,7 +6,8 @@ interface Conference {
     Country: string,
     StartDate: string,
     EndDate: string, 
-    URL: string
+    URL: string,
+    Online: boolean
 }
 
 export default Conference
