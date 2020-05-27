@@ -8,32 +8,14 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: nux.mad.itera.no
-    http:
-      paths:
-      - backend:
-          serviceName: nux-app
-          servicePort: 8080
-        path: /
+    - host: nux.mad.itera.no
+      http:
+        paths:
+          - backend:
+              serviceName: nux-app
+              servicePort: 8080
+            path: /
   tls:
-  - hosts:
-    - nux.mad.itera.no
-    secretName: tls-secret
-
-
-# apiVersion: extensions/v1beta1
-# kind: Ingress
-# metadata:
-#   name: nux
-#   namespace: marianne-playground
-#   annotations:
-#     kubernetes.io/ingress.class: addon-http-application-routing
-# spec:
-#   rules:
-#     - host: nux.e74c370edf4345d39982.westeurope.aksapp.io
-#       http:
-#         paths:
-#           - backend:
-#               serviceName: nux
-#               servicePort: 8080
-#             path: /
+    - hosts:
+        - nux.mad.itera.no
+      secretName: app-tls-secret
