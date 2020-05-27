@@ -9,6 +9,10 @@ const CoursesWrapper = () => {
             <BackBtn url="/conferenecs-and-courses" name="Konferanser og kurs"/>
             <h1>Finn kurs!</h1>
             <p>Her har vi funnet noen nyttige linker til kursoversikter. Håper du liker dem.</p>
+            <a className="page-link" target="_blank" rel="noopener noreferrer" href={"https://www.feed.no/elements-of-ai"}>
+                <FontAwesomeIcon icon={faExternalLinkAlt}/>
+                <span className="page-link-name">{"Feed - Elements of AI"}</span>
+            </a>
             <a className="page-link" target="_blank" rel="noopener noreferrer" href={"https://www.coursera.org/"}>
                 <FontAwesomeIcon icon={faExternalLinkAlt}/>
                 <span className="page-link-name">{"Coursera"}</span>
